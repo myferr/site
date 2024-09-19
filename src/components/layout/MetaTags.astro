@@ -1,0 +1,19 @@
+---
+const { TitleName } = Astro.props;
+const { Description } = Astro.props;
+---
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="title" content={TitleName} />
+<meta name="description" content={Description} />
+<meta name="keywords" content="myferisadev, myfer, portfolio, website" />
+<meta name="author" content="Myfer" />
+<meta property="og:title" content={TitleName} />
+<meta property="og:description" content={Description} />
+<meta property="og:image" content="banner.png" />
+<meta property="og:url" content="https://myferr.foo.ng" />
+<meta property="twitter:card" content="banner.png" />
+<meta property="twitter:title" content={TitleName} />
+<meta property="twitter:description" content={Description} />
+<meta property="twitter:image" content="banner.png" />

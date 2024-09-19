@@ -1,0 +1,33 @@
+---
+import { Separator } from "@/components/ui/separator";
+
+const { title, excerpt, image, authorName, date } = Astro.props;
+
+const post = {
+  title: title,
+  excerpt: excerpt,
+  image: image,
+  author: {
+    name: authorName,
+  },
+  date: date,
+};
+---
+
+<main>
+  <img
+    src={post.image}
+    class="mt-12 mb-3 w-max ml-5 rounded-lg h-48 object-cover"
+  />
+  <div class="ml-5">
+    <h1
+      class="text-3xl my-5 font-black tracking-tighter md:mt-5 sm:text-5xl xl:text-6xl/nonemt-3"
+    >
+      {post.title}
+    </h1>
+
+    <div>
+      <slot />
+    </div>
+  </div>
+</main>

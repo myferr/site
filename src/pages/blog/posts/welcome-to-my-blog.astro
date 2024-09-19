@@ -1,0 +1,23 @@
+---
+import PostLayout from "../lib/layout/PostLayout.astro";
+import Content from "../lib/layout/Content.astro";
+
+const Name = "Welcome to my Blog!";
+---
+
+<PostLayout postName={Name}>
+  <Content
+    title={Name}
+    authorName="MyferIsADev"
+    date="9/17/2024"
+    excerpt="A warm welcome & greeting for everybody visiting my blog"
+    image="/welcome-to-my-blog.jpg"
+  >
+    <p class="max-w-3xl">
+      Hello! I'm <b>Myfer</b>, a <b>Florida-based developer</b> that is experienced
+      in <b>numerous</b> frameworks & programming languages. I'm glad you could take
+      your time and visit my blog.
+      <br />
+    </p>
+  </Content>
+</PostLayout>

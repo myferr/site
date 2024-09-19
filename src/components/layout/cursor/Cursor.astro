@@ -1,0 +1,57 @@
+<div class="cursor-dot" data-cursor-dot></div>
+<div class="cursor-outline" data-cursor-outline></div>
+<div class="hide-cursor" data-hide-cursor></div>
+
+<style>
+  :root {
+    pointer-events: all;
+    cursor: none;
+  }
+
+  .cursor-dot {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+  }
+  .cursor-outline {
+    width: 30px;
+    height: 30px;
+    border: 2px solid hsla(0, 0%, 100%, 0.5);
+  }
+
+  .cursor-dot,
+  .cursor-outline {
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+</style>
+
+<script lang="js">
+  const cursorDot = document.querySelector("[data-cursor-dot]");
+  const cursorOutline = document.querySelector("[data-cursor-outline]");
+
+  document.addEventListener("mousemove", function (e) {
+    const posX = e.clientX;
+    const posY = e.clientY;
+
+    cursorDot.style.left = `${posX}px`;
+    cursorDot.style.top = `${posY}px`;
+
+    cursorOutline.animate(
+      {
+        left: `${posX}px`,
+        top: `${posY}px`,
+      },
+      {
+        duration: 500,
+        fill: "forwards",
+      }
+    );
+  });
+</script>

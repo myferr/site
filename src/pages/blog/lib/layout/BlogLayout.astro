@@ -1,0 +1,23 @@
+---
+const { TitleName } = Astro.props;
+
+import Cursor from "../../../../components/layout/cursor/Cursor.astro";
+import "../../../../styles/globals.css";
+
+const publicDirectory = "../../../public";
+---
+
+<html lang="en">
+  <head id="Head">
+    <link
+      rel="shortcut icon"
+      href=`${publicDirectory}/favicon.png`
+      type="image/x-icon"
+    />
+    <title>{TitleName}</title>
+  </head>
+  <body>
+    <Cursor />
+    <slot />
+  </body>
+</html>

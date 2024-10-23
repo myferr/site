@@ -1,0 +1,12 @@
+{
+  "posts": [
+    {
+      "title": "My love for music.",
+      "id": "my-love-for-music",
+      "author": "Myfer",
+      "date": "10/22/2024",
+      "description": "All about my love for the rap genre",
+      "tags": ["personal", "music"]
+    }
+  ]
+}

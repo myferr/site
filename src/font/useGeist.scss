@@ -1,0 +1,11 @@
+@import url('./Geist.scss');
+:root {
+	--geist-sans: 'Geist';
+	--geist-mono: 'Geist Mono';
+}
+*, #root, :root, body, html, span, p, .geistSans {
+	font-family: var(--geist-sans), sans-serif;
+}
+.geistMono {
+	font-family: var(--geist-mono), monospace, sans-serif;
+}

@@ -34,7 +34,7 @@ export default function About() {
               minimalistic look.
               <br />
               <br />
-              Even though I am I enjoy React and frontend frameworks, I will
+              Even though I enjoy React and frontend frameworks, I will
               forever stand by the fact that{" "}
               <span className="underline">
                 it is very much possible to make a beautiful website without

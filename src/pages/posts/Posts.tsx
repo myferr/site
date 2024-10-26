@@ -30,23 +30,17 @@ export default function Page() {
                   </div>
                   <p className="text-[#9ca3af]">{post.description}</p>
                   <div id="tags">
-                    {blogPosts.map((tags: { tags: any[] }) => {
-                      return (
-                        <div className="flex gap-2 my-2">
-                          {tags.tags.map((tag) => {
-                            return (
-                              <Badge
-                                variant={"secondary"}
-                                key={tag}
-                                className="rounded-full"
-                              >
-                                <span>{tag.toLowerCase()}</span>
-                              </Badge>
-                            );
-                          })}
-                        </div>
-                      );
-                    })}
+                    <div className="flex flex-wrap gap-2">
+                      {post.tags.map((tag) => (
+                        <Badge
+                          key={tag}
+                          variant="secondary"
+                          className="text-xs"
+                        >
+                          {tag}
+                        </Badge>
+                      ))}
+                    </div>
                   </div>
                 </div>
               );

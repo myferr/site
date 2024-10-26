@@ -17,7 +17,7 @@ export default function Header() {
               href="/"
               className="geistMono text-2xl font-semibold text-primary hover:-rotate-3 transition-all duration-300"
             >
-              Dennis.
+              Dennis K.
             </a>
           </div>
           <nav className="hidden md:block">

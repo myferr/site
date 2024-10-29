@@ -306,7 +306,7 @@ export default function App() {
                             <p className="text-lg font-semibold relative top-2 mb-2">
                               Chlove
                             </p>
-                            <p className="text-sm flex">Lead Developer, Shaytris</p>
+                            <p className="text-sm flex">Lead Developer & Founder, Pumpkin 3D</p>
                           </div>
                         </div>
                       </div>

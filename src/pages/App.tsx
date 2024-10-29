@@ -282,6 +282,37 @@ export default function App() {
                     </CardContent>
                   </Card>
                 </CarouselItem>
+                <CarouselItem>
+                  <Card>
+                    <CardContent className="flex flex-col aspect-square items-center justify-center p-6">
+                      <Quote className="justify-center items-center flex my-8 size-12" />
+                      <div>
+                        <p>
+                          Works really slow but gives a
+                          good result totally give them like a millions dollars
+                          or something
+                        </p>
+                      </div>
+                      <Separator className="max-w-[500px] my-8" />
+                      <div>
+                        <div className="flex gap-2 mb-8">
+                          <Avatar className="size12">
+                            <AvatarImage src="/c8772ca1272eb0075b266ab67aa3e9bd.webp" />
+                            <AvatarFallback>
+                              <UserPen />
+                            </AvatarFallback>
+                          </Avatar>
+                          <div className="flex-col">
+                            <p className="text-lg font-semibold relative top-2 mb-2">
+                              Chlove
+                            </p>
+                            <p className="text-sm flex">Lead Developer, Shaytris</p>
+                          </div>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
               </CarouselContent>
               <CarouselPrevious />
               <CarouselNext />

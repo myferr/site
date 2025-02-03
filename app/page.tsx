@@ -1,9 +1,6 @@
-import ColorfulPixelLogo from "./components/ColorfulPixelLogo";
 import BlinkingCursor from "./components/BlinkingCursor";
 import FloatingPixels from "./components/FloatingPixels";
 import NavMenu from "./components/NavMenu";
-import ThemeToggle from "./components/ThemeToggle";
-import SoundEffect from "./components/SoundEffect";
 import PixelatedBackground from "./components/PixelatedBackground";
 
 import src from "./cat.png";
@@ -27,7 +24,6 @@ export default function Home() {
         </header>
       </div>
       <FloatingPixels />
-      <SoundEffect />
     </div>
   );
 }

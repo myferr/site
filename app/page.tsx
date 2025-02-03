@@ -1,83 +1,33 @@
-import Link from "next/link";
+import ColorfulPixelLogo from "./components/ColorfulPixelLogo";
+import BlinkingCursor from "./components/BlinkingCursor";
+import FloatingPixels from "./components/FloatingPixels";
+import NavMenu from "./components/NavMenu";
+import ThemeToggle from "./components/ThemeToggle";
+import SoundEffect from "./components/SoundEffect";
+import PixelatedBackground from "./components/PixelatedBackground";
 
-import Layout from "@/components";
-import { Github, Mail, Twitter } from "lucide-react";
-const skills1 = ["HTML", "CSS", "JavaScript", "TypeScript", "Python", "Ruby"];
-const skills2 = ["React", "Next.js", "Vue", "Svelte", "Astro", "Tailwind CSS"];
-const skills3 = ["Batchfile", "Swift", "Node.js", "Tauri", "MongoDB", "Vite"];
-const skills4 = ["Golang", "Bash", "Flask", "Electron"];
+import src from "./cat.png";
+import Image from "next/image";
 
-const SkillRow: React.FC<{ skills: string[]; direction: "left" | "right" }> = ({
-  skills,
-  direction,
-}) => {
+export default function Home() {
   return (
-    <div
-      className={`flex whitespace-nowrap ${
-        direction === "left" ? "animate-scroll-left" : "animate-scroll-right"
-      }`}
-    >
-      {[...skills, ...skills].map((skill, index) => (
-        <div key={index} className="mx-4 font-bold text-white">
-          {skill}
-        </div>
-      ))}
+    <div className="flex flex-col items-center justify-center h-screen">
+      <PixelatedBackground />
+      <div className="max-w-4xl mx-auto px-4">
+        <header className="py-8 flex flex-col items-center">
+          <Image src={src} alt="cat" width={200} height={200} />
+          <h1 className="text-4xl font-bold text-center font-pixel mb-4 my-12">
+            Dennis
+          </h1>
+          <p className="text-xl text-center font-mono flex items-center">
+            Crafting beautiful websites with the latest technology.{" "}
+            <BlinkingCursor />
+          </p>
+          <NavMenu />
+        </header>
+      </div>
+      <FloatingPixels />
+      <SoundEffect />
     </div>
-  );
-};
-
-export default function pageOne() {
-  return (
-    <Layout>
-      <h1 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
-        I am Dennis.
-      </h1>
-      <p className="max-w-sm text-lg text-center sm:text-left">
-        A 13 year old full stack developer with a passion for code and design.
-      </p>
-      <div className="mt-8 flex flex-col gap-4">
-        <div className="hidden sm:block h-[1px] bg-gray-300/15 self-center w-48"></div>
-        <div className="flex items-center gap-4">
-          <Link
-            href="https://github.com/myferr/"
-            className="text-neutral-400 duration-300 hover:text-white hover:bg-neutral-900 rounded-md p-2"
-          >
-            <Github className="w-6 h-6" />
-          </Link>
-          <Link
-            href="mailto:contactme.myfer@protonmail.com"
-            className="text-neutral-400 duration-300 hover:text-white hover:bg-neutral-900 rounded-md p-2"
-          >
-            <Mail className="w-6 h-6" />
-          </Link>
-          <Link
-            href="https://x.com/idocoding"
-            className="text-neutral-400 duration-300 hover:text-white hover:bg-neutral-900 rounded-md p-2"
-          >
-            <Twitter className="w-6 h-6" />
-          </Link>
-        </div>
-      </div>
-      <div className="mt-8 overflow-x-hidden">
-        <div className="relative overflow-hidden">
-          <div className="max-w-sm mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="space-y-8">
-              <div className="relative">
-                <SkillRow skills={skills1} direction="left" />
-              </div>
-              <div className="relative">
-                <SkillRow skills={skills2} direction="right" />
-              </div>
-              <div className="relative">
-                <SkillRow skills={skills3} direction="left" />
-              </div>
-              <div className="relative">
-                <SkillRow skills={skills4} direction="right" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </Layout>
   );
 }

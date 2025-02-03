@@ -1,33 +1,37 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Press_Start_2P, VT323 } from "next/font/google";
+import type React from "react";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const pressStart2P = Press_Start_2P({
+  weight: "400",
   subsets: ["latin"],
+  variable: "--font-press-start-2p",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const vt323 = VT323({
+  weight: "400",
   subsets: ["latin"],
+  variable: "--font-vt323",
 });
 
-export const metadata: Metadata = {
-  title: "Dennis - Full Stack Developer",
+export const metadata = {
+  title: "Dennis",
   description:
-    "Offering beautiful and functional web development services for businesses, organizations and individuals.",
-  keywords: "web development, web services, myfer, business websites, Dennis",
+    "Programmer, Designer, and Freelancer. I'm a software developer with a passion for creating beautiful and functional websites. I'm also a designer and a freelancer.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${pressStart2P.variable} ${vt323.variable} font-sans bg-gray-900 text-green-400 dark:bg-gray-900 dark:text-green-400`}
       >
         {children}
       </body>

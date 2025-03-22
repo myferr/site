@@ -24,7 +24,7 @@ export default function About() {
           </Link>
           <p>/</p>
           <Link
-            href={"https://github.com/myferr/"}
+            href={"/blog"}
             className="text-blue-600 font-medium underline"
           >
             blog

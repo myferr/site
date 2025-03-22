@@ -19,15 +19,14 @@ export default function Home() {
             twitter
           </Link>
           <p>/</p>
-          <Link
-            href={"/blog"}
-            className="text-blue-600 font-medium underline"
-          >
+          <Link href={"/blog"} className="text-blue-600 font-medium underline">
             blog
           </Link>
         </div>
         <div className="mt-8 max-w-2xl">
           <div>
+            home
+            <br />
             hey, i&apos;m dennis. welcome to my personal site, deployed on{" "}
             <Link
               href={"https://vercel.com/"}

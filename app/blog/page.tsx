@@ -23,25 +23,19 @@ export default function About() {
             twitter
           </Link>
           <p>/</p>
-          <Link
-            href={"/blog"}
-            className="text-blue-600 font-medium underline"
-          >
+          <Link href={"/blog"} className="text-blue-600 font-medium underline">
             blog
           </Link>{" "}
         </div>
         <div className="mt-8 max-w-2xl">
-          blogs
+          blog
           <br />
           all of my compiled posts and articles are here, i write about
           programming, web development, and other topics that interest me.
           <br />
           all of my posts are listed below.
           <div className="gap-8 flex flex-col mt-8">
-            <p className="text-2xl font-bold">
-              there&apos;s not much here yet, but i will be adding more posts
-              soon.
-            </p>
+            <p className="text-2xl font-bold">There is no posts yet.</p>
           </div>
         </div>
       </div>

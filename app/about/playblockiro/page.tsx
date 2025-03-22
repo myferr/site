@@ -41,7 +41,7 @@ export default function PlayBlockiro() {
             >
               blockiro llc
             </Link>
-            , it's a desktop rpg and sandbox game, with the story line and
+            , it&apos;s a desktop rpg and sandbox game, with the story line and
             familiar battle system of a game like{" "}
             <Link
               href={"https://toontownrewritten.com/"}
@@ -54,7 +54,7 @@ export default function PlayBlockiro() {
               href={"https://gmod.facepunch.com/"}
               className="text-blue-600 font-medium underline"
             >
-              gary's mod
+              gary&apos;s mod
             </Link>
             <br />i am currently working on their website as a web developer and
             frontend engineer.
@@ -64,7 +64,7 @@ export default function PlayBlockiro() {
           <br />
           <p className="underline">
             All opinions and content, on my socials and on this web page are my
-            own and aren't statements made by{" "}
+            own and aren&apos;t statements made by{" "}
             <Link
               href={"https://blockiro.net/"}
               className="text-blue-600 font-medium underline"

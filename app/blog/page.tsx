@@ -39,7 +39,8 @@ export default function About() {
           all of my posts are listed below.
           <div className="gap-8 flex flex-col mt-8">
             <p className="text-2xl font-bold">
-              there's not much here yet, but i will be adding more posts soon.
+              there&apos;s not much here yet, but i will be adding more posts
+              soon.
             </p>
           </div>
         </div>

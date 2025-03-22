@@ -28,7 +28,7 @@ export default function Home() {
         </div>
         <div className="mt-8 max-w-2xl">
           <div>
-            hey, i'm dennis. welcome to my personal site, deployed on{" "}
+            hey, i&apos;m dennis. welcome to my personal site, deployed on{" "}
             <Link
               href={"https://vercel.com/"}
               className="text-blue-600 font-medium underline"

@@ -1,30 +1,21 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  --foreground-rgb: 74, 222, 128;
-  --background-start-rgb: 17, 24, 39;
-  --background-end-rgb: 17, 24, 39;
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #fff;
+    --foreground: #000000;
+  }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  background: var(--background);
+  color: var(--foreground);
+  font-family: monospace;
 }
-
-.font-pixel {
-  font-family: var(--font-press-start-2p);
-  text-shadow: 2px 2px 0 #000;
-  letter-spacing: -1px;
-}
-
-.font-mono {
-  font-family: var(--font-vt323);
-}
-
-/* Pixelated border effect */
-.pixelated-border {
-  box-shadow: 0 0 0 2px #4ade80, 0 0 0 4px #000, 0 0 0 6px #4ade80;
-}
-

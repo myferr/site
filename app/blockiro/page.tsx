@@ -65,7 +65,7 @@ export default function Home() {
             </Link>
             .{" "}
             <span className="text-sm text-neutral-600">
-              (fun fact: i'm a server booster)
+              (fun fact: i&apos;m a server booster)
             </span>
           </p>
         </section>
@@ -73,7 +73,7 @@ export default function Home() {
       <footer className="mt-20 text-center text-neutral-500">
         <p>
           All opinions and content, on my socials and on this web page are my
-          own and aren't statements made by Blockiro LLC.
+          own and aren&apos;t statements made by Blockiro LLC.
         </p>
       </footer>
     </main>

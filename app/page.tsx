@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { FaBluesky, FaXTwitter, FaGithub, FaInstagram } from "react-icons/fa6";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { BsStar, BsStarFill } from "react-icons/bs";
 import { BiSolidStarHalf } from "react-icons/bi";

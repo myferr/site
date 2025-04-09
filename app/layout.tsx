@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Dennis —— Software & Web Developer",
   description:
-    "I'm a software and web developer with 5 years of programming experience, explore my website and blog!",
+    "I&apos;m a software and web developer with 5 years of programming experience, explore my website and blog!",
   keywords: [
     "Dennis",
     "Software Developer",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Dennis —— Software & Web Developer",
     description:
-      "I'm a software and web developer with 5 years of programming experience, explore my website and blog!",
+      "I&apos;m a software and web developer with 5 years of programming experience, explore my website and blog!",
     url: "https://myferr.foo.ng",
-    siteName: "Dennis' Portfolio",
+    siteName: "Dennis&apos; Portfolio",
     images: [
       {
         url: "https://github.com/myferr.png",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Dennis —— Software & Web Developer",
     description:
-      "I'm a software and web developer with 5 years of programming experience, explore my website and blog!",
+      "I&apos;m a software and web developer with 5 years of programming experience, explore my website and blog!",
     images: ["https://github.com/myferr.png"],
   },
 };

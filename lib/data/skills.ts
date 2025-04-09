@@ -1,0 +1,27 @@
+const skills = [
+  "JS/TS",
+  "Astro",
+  "HTML",
+  "CSS",
+  "Electron",
+  "Python",
+  "Flask.py",
+  "Go",
+  "MongoDB",
+  "Node.js",
+  "NPM",
+  "PowerShell",
+  "React",
+  "Next.js",
+  "Tailwind",
+  "Swift",
+  "Vue",
+  "Sass/SCSS",
+  "Svelte",
+  "Cloudflare Pages",
+  "Vercel",
+  "Tauri",
+  "Ruby",
+];
+
+export { skills };

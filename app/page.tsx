@@ -1,307 +1,213 @@
 import Link from "next/link";
+import { FaBluesky, FaXTwitter, FaGithub, FaInstagram } from "react-icons/fa6";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { BsStar, BsStarFill } from "react-icons/bs";
+import { BiSolidStarHalf } from "react-icons/bi";
+import { VscVerifiedFilled } from "react-icons/vsc";
+
+import { testimonials } from "@/lib/data/testimonials";
+import { skills } from "@/lib/data/skills";
+import { work } from "@/lib/data/work";
+import { postsMap } from "@/lib/data/posts";
+import { socials } from "@/lib/data/socials";
 
 export default function Home() {
   return (
-    <div>
-      <div className="p-4 pb-10 gap-8 sm:p-10">
-        <div className="flex gap-1">
-          <Link
-            href={"https://github.com/myferr/"}
-            className="text-blue-600 font-medium underline"
-          >
-            github
-          </Link>
-          <p>/</p>
-          <Link
-            href={"https://x.com/myferdoescoding/"}
-            className="text-blue-600 font-medium underline"
-          >
-            twitter
-          </Link>
-          <p>/</p>
-          <Link href={"/blog"} className="text-blue-600 font-medium underline">
-            blog
-          </Link>
-        </div>
-        <div className="mt-8 max-w-2xl">
+    <main className="min-h-screen p-20 md:p-24 lg:p-28 text-md bg-neutral-950 text-neutral-200">
+      <div className="max-w-4xl mx-auto">
+        {/* Header */}
+        <header className="flex justify-between items-start mb-10 ">
           <div>
-            home
-            <br />
-            hey, i&apos;m dennis. welcome to my personal site, deployed on{" "}
-            <Link
-              href={"https://vercel.com/"}
-              className="text-blue-600 font-medium underline"
-            >
-              vercel
-            </Link>{" "}
-            and built with{" "}
-            <Link
-              href={"https://nextjs.org/"}
-              className="text-blue-600 font-medium underline"
-            >
-              next.js
+            <Link className="text-2xl md:text-3xl font-serif italic" href={"/"}>
+              Dennis.
             </Link>
-            {", "}
-            <Link
-              href={"https://tailwindcss.com/"}
-              className="text-blue-600 font-medium underline"
-            >
-              tailwindcss
-            </Link>
-            {", & "}
-            <Link
-              href={"https://typescriptlang.org/"}
-              className="text-blue-600 font-medium underline"
-            >
-              typescript
-            </Link>
-            {". "}i also run a{" "}
-            <Link
-              href={"https://github.com/myferr/"}
-              className="text-blue-600 font-medium underline"
-            >
-              blog
-            </Link>{" "}
-            where i write about programming, web development, and other
-            tech-related topics.
-            <br />
-            <br />
-            <Link href={"mailto:contactme.myfer@protonmail.com"}>
-              <button className="bg-gray-50 px-2 py-1 rounded-md cursor-pointer hover:bg-gray-100">
-                send me an email
-              </button>
-            </Link>
-            <br />
-            <br />
-            or contact me via my email at{" "}
-            <span className="underline">contactme.myfer@protonmail.com</span>
-            <hr className="h-px my-8 bg-gray-200 border-0" />
-            my skills and programming technologies:
-            <br />
-            <Link
-              href={"https://astro.build/"}
-              className="text-blue-600 font-medium underline"
-            >
-              astro
-            </Link>
-            ,{" "}
-            <Link
-              href={"https://www.gnu.org/software/bash/"}
-              className="text-blue-600 font-medium underline"
-            >
-              bash
-            </Link>
-            ,{" "}
-            <Link
-              href={"https://en.wikipedia.org/wiki/Batch_file"}
-              className="text-blue-600 font-medium underline"
-            >
-              batchfile
-            </Link>
-            ,{" "}
-            <Link
-              href={"https://www.w3.org/Style/CSS/Overview.en.html"}
-              className="text-blue-600 font-medium underline"
-            >
-              css
-            </Link>
-            ,{" "}
-            <Link
-              href={"https://electronjs.org/"}
-              className="text-blue-600 font-medium underline"
-            >
-              electron
-            </Link>
-            ,{" "}
-            <Link
-              href={"https://flask.palletsprojects.com/en/stable/"}
-              className="text-blue-600 font-medium underline"
-            >
-              flask.py
-            </Link>
-            ,{" "}
-            <Link
-              href={"https://github.com/"}
-              className="text-blue-600 font-medium underline"
-            >
-              github
-            </Link>
-            ,{" "}
-            <Link
-              href={"https://go.dev/"}
-              className="text-blue-600 font-medium underline"
-            >
-              golang
-            </Link>
-            ,
-            <br />
-            <Link
-              href={"https://html.com/"}
-              className="text-blue-600 font-medium underline"
-            >
-              html
-            </Link>
-            ,{" "}
-            <Link
-              href={"https://javascript.com/"}
-              className="text-blue-600 font-medium underline"
-            >
-              javascript
-            </Link>
-            ,{" "}
-            <Link
-              href={"https://mongodb.com/"}
-              className="text-blue-600 font-medium underline"
-            >
-              mongodb
-            </Link>
-            ,{" "}
-            <Link
-              href={"https://nodejs.org/"}
-              className="text-blue-600 font-medium underline"
-            >
-              nodejs
-            </Link>
-            ,{" "}
-            <Link
-              href={"https://npmjs.com/~myfer"}
-              className="text-blue-600 font-medium underline"
-            >
-              npm
-            </Link>
-            ,{" "}
-            <Link
-              href={"https://microsoft.com/powershell"}
-              className="text-blue-600 font-medium underline"
-            >
-              powershell
-            </Link>
-            ,{" "}
-            <Link
-              href={"https://python.org/"}
-              className="text-blue-600 font-medium underline"
-            >
-              python
-            </Link>
-            ,{" "}
-            <Link
-              href={"https://react.dev/"}
-              className="text-blue-600 font-medium underline"
-            >
-              react
-            </Link>
-            ,
-            <br />
-            <Link
-              href={"https://swift.org/"}
-              className="text-blue-600 font-medium underline"
-            >
-              swift
-            </Link>
-            ,{" "}
-            <Link
-              href={"https://tailwindcss.com/"}
-              className="text-blue-600 font-medium underline"
-            >
-              tailwindcss
-            </Link>
-            ,{" "}
-            <Link
-              href={"https://typescriptlang.org/"}
-              className="text-blue-600 font-medium underline"
-            >
-              typescript
-            </Link>
-            ,{" "}
-            <Link
-              href={"https://vitejs.dev/"}
-              className="text-blue-600 font-medium underline"
-            >
-              vite
-            </Link>
-            ,{" "}
-            <Link
-              href={"https://vuejs.org/"}
-              className="text-blue-600 font-medium underline"
-            >
-              vue
-            </Link>
-            ,{" "}
-            <Link
-              href={"https://sass-lang.com/"}
-              className="text-blue-600 font-medium underline"
-            >
-              sass/scss
-            </Link>
-            ,{" "}
-            <Link
-              href={"https://svelte.dev/"}
-              className="text-blue-600 font-medium underline"
-            >
-              svelte
-            </Link>
-            ,
-            <br />
-            <Link
-              href={"https://pages.dev"}
-              className="text-blue-600 font-medium underline"
-            >
-              cloudflare pages
-            </Link>
-            ,{" "}
-            <Link
-              href={"https://vercel.com/"}
-              className="text-blue-600 font-medium underline"
-            >
-              vercel
-            </Link>
-            ,{" "}
-            <Link
-              href={"https://tauri.app/"}
-              className="text-blue-600 font-medium underline"
-            >
-              tauri
-            </Link>
-            ,{" "}
-            <Link
-              href={"https://nextjs.org/"}
-              className="text-blue-600 font-medium underline"
-            >
-              next.js
-            </Link>
-            ,{" "}
-            <Link
-              href={"https://mdxjs.com/"}
-              className="text-blue-600 font-medium underline"
-            >
-              mdx
-            </Link>
-            <hr className="h-px my-8 bg-gray-200 border-0" />
-            other links:
-            <br />
-            <Link
-              href={"/about"}
-              className="text-blue-600 font-medium underline"
-            >
-              about
-            </Link>
-            ,{" "}
-            <Link
-              href={"/projects"}
-              className="text-blue-600 font-medium underline"
-            >
-              projects
-            </Link>
-            ,{" "}
-            <Link
-              href={"/blog"}
-              className="text-blue-600 font-medium underline"
-            >
-              blog
-            </Link>
+            <p className="text-neutral-400 mt-1 pointer-events-none">
+              Full-stack developer
+            </p>
           </div>
-        </div>
+          <div className="flex items-center gap-4 text-neutral-400">
+            {socials.map((social, index) => (
+              <Link
+                key={index}
+                href={social.url}
+                className="hover:text-white transition-colors duration-300"
+                aria-label={social.name}
+              >
+                <social.icon />
+              </Link>
+            ))}
+          </div>
+        </header>
+
+        {/* Bio */}
+        <section className="mb-12">
+          <p className="flex gap-1 pointer-events-none">
+            A <span className="italic font-serif">thirteen year-old</span>,
+            software and web developer from <span></span>
+            <span className="px-3 py-1 bg-neutral-900 rounded-md text-sm border hover:underline pointer-events-none font-serif italic">
+              Florida, United States
+            </span>
+            .
+          </p>
+          <p className="mt-4 space-y-2">
+            <span className="pointer-events-none">
+              {" "}
+              Building several open-source projects, and working on a few
+              freelance projects occasionally with my{" "}
+              <span className="italic font-serif">
+                five years of programming experience
+              </span>
+              .
+            </span>
+            <br />
+            <span className="pointer-events-none">Currently an intern at </span>
+            <Link
+              className="px-3 py-1 bg-neutral-900 rounded-md text-sm border hover:underline cursor-pointer duration-300 font-serif italic"
+              href={"/blockiro"}
+            >
+              Blockiro LLC
+              <FaExternalLinkAlt className="inline-block ml-3 size-3 text-neutral-400" />
+            </Link>
+            .
+          </p>
+        </section>
+
+        {/* Skills */}
+        <section className="flex flex-wrap gap-2 mb-16 border-dashed border border-neutral-800 rounded-xl p-8">
+          {skills.map((skill) => (
+            <span
+              key={skill}
+              className="px-2 bg-neutral-900 text-neutral-400 rounded-md text-sm border hover:underline pointer-events-none font-mono"
+            >
+              {skill}
+            </span>
+          ))}
+        </section>
+
+        {/* Work Section */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-serif italic mb-2">Work</h2>
+          {work.map((job, index) => (
+            <div
+              key={index}
+              className="border-t border-neutral-800 border-dashed pt-4 mb-12"
+            >
+              <h3 className="text-xl mt-1">{job.title}</h3>
+              <ul className="list-disc list-inside mt-4 space-y-2 text-neutral-300">
+                {job.items.map((item, idx) => (
+                  <li key={idx}>{item}</li>
+                ))}
+              </ul>
+              <p className="mt-3 text-neutral-400">@ {job.company}</p>
+            </div>
+          ))}
+        </section>
+
+        {/* Writing Section */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-serif italic mb-2">Writing</h2>
+          {postsMap.map((post) => (
+            <div key={post.title} className="border-b border-neutral-800 py-4">
+              <h3 className="text-xl">
+                <Link
+                  href={post.link}
+                  className="hover:text-white transition-colors duration-300"
+                >
+                  {post.title}
+                </Link>
+              </h3>
+              <div className="text-neutral-400 text-sm">{post.date}</div>
+            </div>
+          ))}
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-2xl font-serif italic mb-4">Testimonials</h2>
+          {testimonials.map((testimonial, index) => (
+            <div
+              key={index}
+              className="flex flex-wrap gap-2 mb-2 border-dashed border border-neutral-800 rounded-xl p-8"
+            >
+              <div className="flex flex-col gap-2">
+                <h3 className="text-xl">
+                  {testimonial.name}{" "}
+                  {testimonial.alias && (
+                    <span className="text-neutral-400 text-sm">
+                      (Anonymized alias)
+                    </span>
+                  )}
+                </h3>
+                <p className="text-neutral-400 text-sm flex gap-1 items-center">
+                  {testimonial.title} of {testimonial.company}{" "}
+                  <VscVerifiedFilled className="text-sky-600 size-4" />
+                </p>
+                <p className="text-neutral-300">{testimonial.content}</p>
+                <div className="flex gap-1 mt-2">
+                  {Array.from({ length: 10 }).map((_, i) => {
+                    if (i < Math.floor(testimonial.rating)) {
+                      return <BsStarFill key={i} className="text-yellow-500" />;
+                    } else if (
+                      i < testimonial.rating &&
+                      testimonial.rating % 1 !== 0
+                    ) {
+                      return (
+                        <BiSolidStarHalf key={i} className="text-yellow-500" />
+                      );
+                    } else {
+                      return <BsStar key={i} className="text-yellow-500" />;
+                    }
+                  })}
+                  <div className="text-neutral-400 text-sm">
+                    {testimonial.rating}/10
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </section>
+
+        {/* Contact Section */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-serif italic mb-2">Contact</h2>
+          <div className="border-t border-neutral-800 border-dashed pt-4">
+            <div className="text-sm flex gap-12 max-w-md flex-wrap">
+              <Link
+                className="border-b border-neutral-600 pb-2"
+                href={"https://www.x.com/myferdoescoding"}
+              >
+                X / Twitter (@myferdoescoding)
+              </Link>
+              <Link
+                className="border-b border-neutral-600 pb-2"
+                href={"https://bsky.app/profile/myferr.bsky.social"}
+              >
+                Bluesky (@myferr.bsky.social)
+              </Link>
+              <Link
+                className="border-b border-neutral-600 pb-2"
+                href={"mailto:contactme.myfer@protonmail.com"}
+              >
+                Email (contactme.myfer@protonmail.com)
+              </Link>
+            </div>
+          </div>
+        </section>
       </div>
-    </div>
+      <footer className="mt-20 text-center text-neutral-400 justify-center items-center flex flex-col space-y-2">
+        <p>Thanks for checking out my website!</p>
+        <div className="flex items-center gap-4 text-neutral-400">
+          {socials.map((social, index) => (
+            <Link
+              key={index}
+              href={social.url}
+              className="hover:text-white transition-colors duration-300"
+              aria-label={social.name}
+            >
+              <social.icon />
+            </Link>
+          ))}
+        </div>
+      </footer>
+    </main>
   );
 }

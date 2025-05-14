@@ -42,7 +42,7 @@ export default function Home() {
         </div>
       </nav>
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <h1 className="text-xl">Hey, I'm Myfer.</h1>
+        <h1 className="text-xl">Hey, I&apos;m Myfer.</h1>
         <div className="space-y-0.5 flex flex-col font-mono text-amber-100">
           <p>{"> buy mustard gas"}</p>
           <p>{"> look inside"}</p>

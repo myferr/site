@@ -54,7 +54,7 @@ export default function Home() {
               Mr. Morale & The Big Steppers - Exclusive Metalic Gold Vinyl
             </p>
             <p className="text-sm max-w-sm mt-1">
-              My first vinyl and it's a deep lyrical masterpiece with deep
+              My first vinyl and it&apos;s a deep lyrical masterpiece with deep
               themes.
             </p>
           </div>
@@ -67,8 +67,8 @@ export default function Home() {
               aria-label="Hurry Up Tomorrow - The Weeknd x Basquiat 'Hurry Up Tomorrow' Collector's Edition Vinyl"
             ></Image>
             <p className="font-mono opacity-30 text-xs mt-2">
-              "Hurry Up Tomorrow - The Weeknd x Basquiat 'Hurry Up Tomorrow'
-              Collector's Edition Vinyl"{" "}
+              "Hurry Up Tomorrow - The Weeknd x Basquiat &apos;Hurry Up
+              Tomorrow&apos; Collector&apos;s Edition Vinyl"{" "}
             </p>
             <p className="text-sm max-w-sm mt-1">
               My second vinyl. Just wow. Absolutely love this album. XOTWOD{" "}
@@ -87,8 +87,9 @@ export default function Home() {
               Donda - Deluxe 4LP Vinyl
             </p>
             <p className="text-sm max-w-sm mt-1">
-              My third vinyl and it's a great album, one of my favorite Kanye
-              albums. It's sad to see how much he's changed over the years.
+              My third vinyl and it&apos;s a great album, one of my favorite
+              Kanye albums. It&apos;s sad to see how much he&apos;s changed over
+              the years.
             </p>
           </div>
         </div>

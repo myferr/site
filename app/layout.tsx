@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "@/styles/globals.css";
+import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,41 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dennis —— Software & Web Developer",
-  description:
-    "I&apos;m a software and web developer with 5 years of programming experience, explore my website and blog!",
-  keywords: [
-    "Dennis",
-    "Software Developer",
-    "Web Developer",
-    "Programming",
-    "Blog",
-    "Portfolio",
-  ],
-  authors: [{ name: "Dennis", url: "https://myferr.foo.ng" }],
+  title: "dennis",
+  description: "I'm a web, CLI, JavaScript library, and desktop app developer",
   openGraph: {
-    title: "Dennis —— Software & Web Developer",
-    description:
-      "I&apos;m a software and web developer with 5 years of programming experience, explore my website and blog!",
-    url: "https://myferr.foo.ng",
-    siteName: "Dennis&apos; Portfolio",
-    images: [
-      {
-        url: "https://github.com/myferr.png",
-        width: 1200,
-        height: 630,
-        alt: "Dennis —— Software & Web Developer",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Dennis —— Software & Web Developer",
-    description:
-      "I&apos;m a software and web developer with 5 years of programming experience, explore my website and blog!",
-    images: ["https://github.com/myferr.png"],
+    images: ["/website.png"],
   },
 };
 
@@ -59,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased dark`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>

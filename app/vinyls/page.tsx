@@ -67,8 +67,8 @@ export default function Home() {
               aria-label="Hurry Up Tomorrow - The Weeknd x Basquiat 'Hurry Up Tomorrow' Collector's Edition Vinyl"
             ></Image>
             <p className="font-mono opacity-30 text-xs mt-2">
-              "Hurry Up Tomorrow - The Weeknd x Basquiat &apos;Hurry Up
-              Tomorrow&apos; Collector&apos;s Edition Vinyl"{" "}
+              Hurry Up Tomorrow - The Weeknd x Basquiat &apos;Hurry Up
+              Tomorrow&apos; Collector&apos;s Edition Vinyl{" "}
             </p>
             <p className="text-sm max-w-sm mt-1">
               My second vinyl. Just wow. Absolutely love this album. XOTWOD{" "}
